@@ -38,7 +38,6 @@ const getPage = async (page, url, sd, key_) => {
         let reg1 = /展开全文c|展开全文/
         if (!reg.test(text) && !reg1.test(text)) {
             const text_ = rlue.filter(text)
-            console.log(text_)
             if (text_ !== '') {
                 const row = [text_, sd]
                 data.push(row)
